@@ -1,0 +1,7 @@
+Information about the project:
+
+Virtual Environment
+Create Virtual Environment: python -m venv venv 
+Activate virtual environment: .\venv\Scripts\activate
+
+Github Commands: 

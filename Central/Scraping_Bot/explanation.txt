@@ -1,0 +1,23 @@
+How to Use the Bot
+
+Install Dependencies: Ensure you have the required libraries by running:
+
+Set the Base URL: Replace "https://example.com" with the base URL of the site you want to scrape.
+
+Define Endpoints: The endpoints list should contain paths of pages relative to the base URL. For example, if you want to scrape https://example.com/page1, add "page1" to the list.
+
+Customize Data Processing: Modify the process_data method to extract the specific data you need from the page. The example provided extracts and prints all paragraph text.
+
+Run the Bot: Execute the script. The bot will visit each endpoint, fetch the page content, process the data, and wait for a random interval between requests to help avoid detection.
+
+
+What the Code Does
+User Agent Randomization: The bot uses the fake_useragent library to generate random user-agent strings, making requests appear as if they come from different browsers.
+
+Session Management: The requests.Session() object manages cookies and connection pooling, making the bot more efficient.
+
+Error Handling: The fetch_page method includes basic error handling to manage failed requests.
+
+Random Delays: The wait_random method introduces random delays between requests, reducing the likelihood of the bot being flagged as a scraper.
+
+Modularity: The design allows you to add or modify functionality, such as extracting different types of data or handling JavaScript-rendered content.
