@@ -5,3 +5,4 @@ Create Virtual Environment: python -m venv venv
 Activate virtual environment: .\venv\Scripts\activate
 
 Github Commands: 
+git remote add origin <https://github.com/mendentm/Data_Processing.git>
